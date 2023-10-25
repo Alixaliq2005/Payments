@@ -1,11 +1,8 @@
 package az.ingress.payment.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
-import java.time.LocalDate;
 
 @Entity
 @Builder
@@ -13,14 +10,18 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "invoices")
-public class Invoice {
+@Table(name = "customers")
+public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    Double amount;
-    @JsonFormat(pattern = "dd.MM.yyyy")
-    LocalDate dueDate;
-}
+    String firstName;
 
+    String lastName;
+
+    String phoneNumber;
+
+    String email;
+
+}

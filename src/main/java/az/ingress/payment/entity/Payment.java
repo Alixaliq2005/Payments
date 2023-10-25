@@ -25,8 +25,7 @@ public class Payment {
 
     Double amount;
 
-    String typeOfPayment;
-    Boolean cash;
+    String paymentMethod;
 
     @JsonFormat(pattern = "dd.MM.yyyy")
     LocalDate date;

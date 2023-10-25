@@ -11,7 +11,10 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class PaymentRequest {
+
     Double amount;
+
+    String paymentMethod;
 
     @JsonFormat(pattern = "dd.MM.yyyy")
     LocalDate date;

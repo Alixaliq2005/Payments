@@ -15,6 +15,8 @@ public class PaymentResponse {
 
     Double amount;
 
+    String paymentMethod;
+
     @JsonFormat(pattern = "dd.MM.yyyy")
     LocalDate date;
 }
