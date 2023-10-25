@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20231025-07
+      author: FizaretOsmanov
+      changes:
+        - insert:
+            tableName: project
+            columns:
+              - column:
+                  name: name
+                  value: Fizaret
+              - column:
+                  name: amount
+                  value: 890dollar
+              - column:
+                  name: email
+                  value: fizaretOsman@gmail.com
+              - column:
+                  name: phoneNumber
+                  value: +994507325300;

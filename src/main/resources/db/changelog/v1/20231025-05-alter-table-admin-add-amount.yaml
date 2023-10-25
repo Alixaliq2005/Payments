@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20231025-05
+      author: FizaretOsmanov
+      changes:
+        - addColumn:
+            tableName: project
+            columns:
+              - column:
+                  name: amount
+                  type: INT

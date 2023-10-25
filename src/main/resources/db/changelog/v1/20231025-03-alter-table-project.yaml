@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20231025-03
+      author: FizaretOsmanov
+      changes:
+          - renameColumn:
+              tableName: project
+              oldColumnName: mail
+              newColumnName: email
+              columnDataType: VARCHAR(255)

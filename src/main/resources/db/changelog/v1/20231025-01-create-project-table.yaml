@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20231025-01
+      author: FizaretOsmanov
+      changes:
+        - createTable:
+            tableName: project
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: project_pkey
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: mail
+                  type: VARCHAR(255)
+              - column:
+                  name: password
+                  type: VARCHAR(255)
+              - column:
+                  name: phoneNumber
+                  type: VARCHAR(255)

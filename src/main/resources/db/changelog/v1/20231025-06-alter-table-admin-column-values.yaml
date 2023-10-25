@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20231025-06
+      author: FizaretOsmanov
+      changes:
+        - modifyDataType:
+            tableName: project
+            columnName: amount
+            newDataType: VARCHAR(255)
